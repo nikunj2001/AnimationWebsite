@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import { AiFillHome,AiOutlineBook,AiOutlinePhone } from "react-icons/ai";
 
 const Nav = () => {
+   
     return (
         <div className='navbar' > 
             <div className="container">
@@ -12,23 +13,22 @@ const Nav = () => {
                     </div>
                     <div className="nav__right">
                        <ul>
-                           <li>
+                           <li className="home">
                                 <Link to='/'>
-                                <a href="">
-                                        <AiFillHome className="homeIcon" />
+                                <a href="" className="homeIcon"><AiFillHome/>
                                 </a>
-                                   
+            
                                 </Link>
                            </li>
                            <li>
                                 <Link to='/about'>
-                                <a href=""><AiOutlineBook className='aboutIcon' /></a>
+                                <a href="" className='aboutIcon'><AiOutlineBook  /></a>
                                     
                                 </Link>
                            </li>
                            <li>
                                 <Link to='/contact'>
-                                    <a href=""><AiOutlinePhone  className='contactIcon' /></a>
+                                    <a href=""  className='contactIcon'><AiOutlinePhone  /></a>
                                 </Link>
                            </li>
                        </ul>

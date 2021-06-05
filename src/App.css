@@ -169,22 +169,42 @@ body {
   margin: 0 40px;
   width: 75%;
 }
-button {
+.btn-code {
   color: white;
   background: #dd794a;
-  margin-top: 12px;
-  cursor: pointer;
-  cursor: pointer;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
   border-radius: 9px;
   border: none;
   width: 72%;
   padding: 12px 0;
-  pointer-events: none;
   margin-top: 25px;
   margin-left: 50px;
+  cursor: pointer;
 }
-button:hover {
-  background: #d66029;
+
+.homeIcon:after {
+  transition: 1s visibility ease-in-out;
+}
+.aboutIcon:after {
+  transition: 1s visibility ease-in-out;
+}
+
+.homeIcon:hover::after {
+  content: "Home";
+  visibility: visible;
+  display: inline-block;
+  transform: visibility;
+}
+.aboutIcon:hover::after {
+  content: "About";
+  visibility: visible;
+  display: inline-block;
+  transform: visibility;
+}
+.contactIcon:hover::after {
+  content: "Contact";
+  visibility: visible;
+  display: inline-block;
+  transform: visibility;
 }
